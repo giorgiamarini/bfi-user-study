@@ -1,0 +1,229 @@
+<!DOCTYPE HTML> <!-- which version of html we are using -->
+<html>
+
+	<head>
+		<meta charset=“utf-8”>
+		<meta name=“description” content=“Big Five Personality Inventory">
+		<title>Big Five Personality Inventory</title>
+		<link rel="stylesheet" type="text/css" href="css/rate.css">
+	</head>
+
+	<body background="Images/A1D29F00-389E-428E-8F23-FAE0EB974C4E.jpeg">	
+
+		<div id="background"> <!-- this is the wrap for the whole page -->
+
+			<div id="wrap">
+
+				<header id="header">
+						<h1>Big Five Personality Inventory</h1>
+							<h2> Giorgia Marini, Universit&agrave; degli Studi Roma Tre</h2> 
+				</header>
+
+				<div id="content">
+					<!-- Create a form for the test and add data attributes to each question -->
+					<form id="ratings-form" action = "process-ratings.php" method = "post">
+                  <p>
+                    <p> What do you think about those movies?</p>
+         <p> <p> 1.The Indian in the cupboard (1995)</p>
+        <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/H6AEYBcwsR8" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+    </p>
+    <fieldset class="rating">
+        <legend>Rate it:</legend>
+        <input type="radio" id="no-rate1" class="input-no-rate" name="rating1" value="0" checked=""
+           aria-label="No rating.">
+
+        <input type="radio" id="rate1of1" name="rating1" value="1">
+        <label for="rate1of1">1 star</label>
+
+        <input type="radio" id="rate2of1" name="rating1" value="2">
+        <label for="rate2of1">2 stars</label>
+
+        <input type="radio" id="rate3of1" name="rating1" value="3">
+        <label for="rate3of1">3 stars</label>
+
+        <input type="radio" id="rate4of1" name="rating1" value="4">
+        <label for="rate4of1">4 stars</label>
+
+        <input type="radio" id="rate5of1" name="rating1" value="5">
+        <label for="rate5of1">5 stars</label>
+
+        <span class="focus-ring"></span>
+     </fieldset>
+    </p> 
+    <p>
+    <p> <p> 2. Little Women (1994)</p>
+    <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/lWn4h2YLxGA" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
+    </p>
+    <fieldset class="rating">
+        <legend>Rate it:</legend>
+        <input type="radio" id="no-rate2" class="input-no-rate" name="rating2" value="0" checked=""
+           aria-label="No rating.">
+
+        <input type="radio" id="rate1of2" name="rating2" value="1">
+        <label for="rate1of2">1 star</label>
+
+        <input type="radio" id="rate2of2" name="rating2" value="2">
+        <label for="rate2of2">2 stars</label>
+
+        <input type="radio" id="rate3of2" name="rating2" value="3">
+        <label for="rate3of2">3 stars</label>
+
+        <input type="radio" id="rate4of2" name="rating2" value="4">
+        <label for="rate4of2">4 stars</label>
+
+        <input type="radio" id="rate5of2" name="rating2" value="5">
+        <label for="rate5of2">5 stars</label>
+
+        <span class="focus-ring"></span>
+     </fieldset>
+    </p>
+    <p>
+    <p> <p> 3. Miracle on 34th street (1994)</p>
+    <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/leDD6Y-Nyqg" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
+    </p>
+    <fieldset class="rating">
+        <legend>Rate it:</legend>
+        <input type="radio" id="no-rate3" class="input-no-rate" name="rating3" value="0" checked=""
+           aria-label="No rating.">
+
+        <input type="radio" id="rate1of3" name="rating3" value="1">
+        <label for="rate1of3">1 star</label>
+
+        <input type="radio" id="rate2of3" name="rating3" value="2">
+        <label for="rate2of3">2 stars</label>
+
+        <input type="radio" id="rate3of3" name="rating3" value="3">
+        <label for="rate3of3">3 stars</label>
+
+        <input type="radio" id="rate4of3" name="rating3" value="4">
+        <label for="rate4of3">4 stars</label>
+
+        <input type="radio" id="rate5of3" name="rating3" value="5">
+        <label for="rate5of3">5 stars</label>
+
+        <span class="focus-ring"></span>
+     </fieldset>
+    </p>
+    <p>
+    <p> <p> 4. Superman II (1980)</p>
+    <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/jxD8RlGnP64" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
+    </p>
+    <fieldset class="rating">
+        <legend>Rate it:</legend>
+        <input type="radio" id="no-rate4" class="input-no-rate" name="rating4" value="0" checked=""
+           aria-label="No rating.">
+
+        <input type="radio" id="rate1of4" name="rating4" value="1">
+        <label for="rate1of4">1 star</label>
+
+        <input type="radio" id="rate2of4" name="rating4" value="2">
+        <label for="rate2of4">2 stars</label>
+
+        <input type="radio" id="rate3of4" name="rating4" value="3">
+        <label for="rate3of4">3 stars</label>
+
+        <input type="radio" id="rate4" name="rating4" value="4">
+        <label for="rate4">4 stars</label>
+
+        <input type="radio" id="rate5of4" name="rating4" value="5">
+        <label for="rate5of4">5 stars</label>
+
+        <span class="focus-ring"></span>
+     </fieldset>
+    </p>
+    <p>
+    <p> <p> 5. Alvin and the Chipmunks (2007)</p>
+    <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/sc-C8uumMkw" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
+    </p>
+    <fieldset class="rating">
+        <legend>Rate it:</legend>
+        <input type="radio" id="no-rate5" class="input-no-rate" name="rating5" value="0" checked=""
+           aria-label="No rating.">
+
+        <input type="radio" id="rate1of5" name="rating5" value="1">
+        <label for="rate1of5">1 star</label>
+
+        <input type="radio" id="rate2of5" name="rating5" value="2">
+        <label for="rate2of5">2 stars</label>
+
+        <input type="radio" id="rate3of5" name="rating5" value="3">
+        <label for="rate3of5">3 stars</label>
+
+        <input type="radio" id="rate4of5" name="rating5" value="4">
+        <label for="rate4of5">4 stars</label>
+
+        <input type="radio" id="rate5of5" name="rating5" value="5">
+        <label for="rate5of5">5 stars</label>
+
+        <span class="focus-ring"></span>
+     </fieldset>
+    </p>
+    <p>
+    <p> <p> 5. Castaway on the moon (2009)</p>
+    <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/QrGvhwwWP8Q" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
+    </p>
+    <fieldset class="rating">
+        <legend>Rate it:</legend>
+        <input type="radio" id="no-rate6" class="input-no-rate" name="rating6" value="0" checked=""
+           aria-label="No rating.">
+
+        <input type="radio" id="rate1of6" name="rating6" value="1">
+        <label for="rate1of6">1 star</label>
+
+        <input type="radio" id="rate2of6" name="rating6" value="2">
+        <label for="rate2of6">2 stars</label>
+
+        <input type="radio" id="rate3of6" name="rating6" value="3">
+        <label for="rate3of6">3 stars</label>
+
+        <input type="radio" id="rate4of6" name="rating6" value="4">
+        <label for="rate4of6">4 stars</label>
+
+        <input type="radio" id="rate5of6" name="rating6" value="5">
+        <label for="rate5of6">5 stars</label>
+
+        <span class="focus-ring"></span>
+     </fieldset>
+</p>
+<input type="submit" name="submit" value="Save your ratings">
+</form>
+
+				
+					</div>
+
+				</div>
+
+
+			</div>
+
+		</div>
+
+		<!--script src="js/main.js" type="text/javascript"></script-->
+
+	</body>
+
+<html>
