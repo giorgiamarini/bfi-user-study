@@ -19,7 +19,7 @@ if (!mysqli_stmt_prepare($stmt, $sql1)) {
     die(mysqli_error($conn));
 }
 
-mysqli_stmt_bind_param($stmt, "iiiiiii",
+mysqli_stmt_bind_param($stmt, "siiiiii",
                         $_SESSION['userid'],
                        $r1,
                        $r2,
