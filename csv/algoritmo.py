@@ -10,8 +10,8 @@ def algoritmo():
     ser_ps_u = float(sys.argv[1])
     ratings_u =[int(sys.argv[2]), int(sys.argv[3]), int(sys.argv[4]), int(sys.argv[5]), int(sys.argv[6])]
 
-    df_ratings = pd.read_csv(r'new_ratings_1000.csv')
-    df_personalityData = pd.read_csv(r'new_personalityData_1000.csv')
+    df_ratings = pd.read_csv(r'/Applications/XAMPP/xamppfiles/htdocs/bfi-user-study/csv/new_ratings_1000.csv')
+    df_personalityData = pd.read_csv(r'/Applications/XAMPP/xamppfiles/htdocs/bfi-user-study/csv/new_personalityData_1000.csv')
     
     list_ids = list(df_personalityData['user_id'].unique())
     list_repeated_ids = list(df_ratings['user_id'])
@@ -20,10 +20,10 @@ def algoritmo():
         new_id.append(list_ids.index(i))
     df_ratings = df_ratings.assign(new_id=pd.Series(new_id).values)
 
-    df_movies = pd.read_csv(r'new_movies_1000.csv')
-    df_ratings_base = pd.read_csv(r'cleaned_ratings.csv')
+    df_movies = pd.read_csv(r'/Applications/XAMPP/xamppfiles/htdocs/bfi-user-study/csv/new_movies_1000.csv')
+    df_ratings_base = pd.read_csv(r'/Applications/XAMPP/xamppfiles/htdocs/bfi-user-study/csv/cleaned_ratings.csv')
 
-    with open('filtered_dict_pop.csv') as dict_pop_file:
+    with open('/Applications/XAMPP/xamppfiles/htdocs/bfi-user-study/csv/filtered_dict_pop.csv') as dict_pop_file:
         reader = csv.reader(dict_pop_file)
         next(reader)
         dict_pop = dict(reader)
@@ -145,7 +145,7 @@ def algoritmo():
 
     dict_chosen_pred_r = dict(new_ordered[0:n_chosen])
 
-    with open('dict_sim_new.csv') as dict_sim_file:
+    with open('/Applications/XAMPP/xamppfiles/htdocs/bfi-user-study/csv/dict_sim_new.csv') as dict_sim_file:
         reader = csv.reader(dict_sim_file)
         next(reader)
         dict_sim = dict(reader)
