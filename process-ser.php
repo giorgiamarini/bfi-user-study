@@ -28,7 +28,7 @@ mysqli_stmt_bind_param($stmt, "siiiiii",
                        $s5, 
                        $s6);
 
-#mysqli_stmt_execute($stmt);
+mysqli_stmt_execute($stmt);
 
 header( 'Location: fine.html' );
 

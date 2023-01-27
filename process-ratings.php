@@ -27,13 +27,11 @@ mysqli_stmt_bind_param($stmt, "siiiii",
                        $rating4, 
                        $rating5);
 
-#mysqli_stmt_execute($stmt);
+mysqli_stmt_execute($stmt);
 
 $ser = floatval($_SESSION['serendipity']);
 $python_output = exec("/Library/Frameworks/Python.framework/Versions/3.10/bin/python3 ./csv/algoritmo.py $ser $rating1 $rating2 $rating3 $rating4 $rating5 2>&1");
-print($python_output);
 $my_array = json_decode($python_output, true);
-#print($my_array);
 $sql2= "INSERT INTO rec (user_id, rec1, rec2, rec3, rec4, rec5) VALUES (?, ?, ?, ?, ?, ?)";
 
 $stmt = mysqli_stmt_init($conn);
@@ -52,6 +50,8 @@ mysqli_stmt_bind_param($stmt, "siiiii",
                        $my_array[4]);
 
 mysqli_stmt_execute($stmt);
+
+$_SESSION['rec'] = $my_array;
 
 header( 'Location: pop.html' );
 ?> 

@@ -31,5 +31,5 @@ mysqli_stmt_bind_param($stmt, "siiiiii",
 mysqli_stmt_execute($stmt);
 
 
-header( 'Location: serendipity.html' );
+header( 'Location: serendipity.php' );
 ?> 
